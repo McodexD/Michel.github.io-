@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <header>
+        <h1>Michel T</h1>
+        <p>Computer Scientist</p>
+    </header>
+    
+    <nav>
+        <!-- Add navigation links based on your projects -->
+        <a href="#web">Websites</a>
+        <a href="#software">Software</a>
+        <a href="#studio">Studio</a>
+        <a href="#games">Video Games</a>
+        <a href="#videos">Videos</a>
+        <a href="#animation">Animation</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2 style="text-align: center;">About Me</h2>
+            <p style="text-align: center;">
+                Greetings, I am Michel T, a dedicated enthusiast with a profound passion for<br>
+                world-building, storytelling, and cutting-edge technology. Welcome to my project page,<br>
+                where creativity meets innovation.<br>
+                <h1 style="text-align: center;">My projects</h1>
+            </p>
+        </section>
+
+        <!-- Websites Section -->
+        <section id="web">
+            <h2>Websites</h2>
+            <div class="project website-project"> <!-- Corrected class attribute -->
+                <h3>Eleumania Academy</h3>
+                <p>An esport academy for csgo/dota2</p>
+                <a href="https://mcodexd.github.io/mcodexd.github.io-/" target="_blank"></a>
+            </div>
+        
+            <div class="project website-project">
+                <h3>My Personal Portfolio</h3>
+                <p>A Portfolio so you can know more about me</p>
+                <a href="https://mcodexd.github.io/MichelT.github.io-/#projects" target="_blank"></a>
+            </div>
+            <!-- Add more website projects as needed -->
+        </section>
+
+        <!-- Software Section -->
+        <section id="studio">
+            <h2>Studio</h2>
+            <div class="project">
+                <h3>Xindex studios</h3>
+                <p>A studio to produce stroies, 3d projects, games, animations, music, art and more</p>
+                <a href="" target="_blank">check us out</a>
+            </div>
+            <!-- Add content for the Studio section -->
+        </section>
+
+        
+        <section id="software">
+            <h2>Software</h2>
+            <div class="project software-project">
+                <h3>Software Project 1</h3>
+                <p>(Note) these are all shown in Swedish</p>
+                <!-- Add a placeholder element for the video popup -->
+                <div class="video-popup" data-video-id="MfmbqvdWRjQ"></div>
+                <a href="software_project1.html" target="_blank"></a>
+            </div>
+            <!-- Add more software projects as needed -->
+        </section>
+        <!-- Studio Section -->
+        <!-- Video Games Section -->
+        <section id="games">
+            <h2>Video Games</h2>
+            <div class="project software-project">
+                <h3>Video Game 1</h3>
+                <p>(Note) these are all shown in Swedish</p>
+                <!-- Add a placeholder element for the video popup -->
+                <div class="video-popup" data-video-id="Nw7v31gbgWg"></div>
+                <a href="#" target="_blank">Game Link</a>
+            </div>
+            <!-- Add more video game projects as needed -->
+        </section>
+
+        <!-- Videos Section -->
+        <section id="videos">
+            <h2>Check out my youtube channel of some video i edit (gameplay)</h2>
+            <div class="project">
+                <a href="https://www.youtube.com/@mcodexd4552" target="_blank">My Channle</a>
+
+            </div>
+            <!-- Add content for the Videos section -->
+        </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact">
+        <h2 style="text-align: center;">Contact Me</h2>
+        <p class="contact-text">Contact me for collaboration or any inquiries. I'll get back to you as soon as possible.</p>
+        <div class="contact-form">
+            <!-- Your Formspree form -->
+            <form action="https://formspree.io/f/myyryzdp" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" name="_replyto" required>
+        
+                <label for="message">Message:</label>
+                <textarea name="message" required></textarea>
+        
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Michel T. All Rights Reserved</p>
+    </footer>
+
+   
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="modal-iframe" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+   
+   
+    <script src="script.js"></script>
+</body>
+</html>

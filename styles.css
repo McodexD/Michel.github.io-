@@ -1,0 +1,213 @@
+/* Example media query for smaller screens */
+@media screen and (max-width: 600px) {
+    /* Add your responsive styles here */
+    html {
+        scroll-behavior: smooth;
+    }
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #001802;
+    color: rgb(177, 222, 135);
+}
+
+header {
+    background-color: #001802;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+nav {
+    background-color: #177c5e;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add a hover effect to the navigation links */
+nav a:hover {
+    background-color: #fff;
+    color: #177c5e;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.project {
+    background-color: #177c5e;
+    color: rgb(177, 222, 135);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect to scale up the project boxes */
+.project:hover {
+    transform: scale(1.1);
+}
+
+/* Style the links inside the project boxes */
+.project a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Add hover effect to change link color */
+.project:hover a {
+    color: #fff;
+}
+.project:hover {
+    transform: scale(1.05);
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #177c5e;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #177c5e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-text {
+    color: #177c5e;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #001802;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#contact {
+    text-align: center;
+}
+
+/* Add animation to the navigation links */
+nav a {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #177c5e;
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #177c5e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%; /* Adjust the width as needed */
+    height: 80%; /* Adjust the height as needed */
+}
+
+#modal-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+.project.website-project {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+}
+
+.project.website-project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(23, 124, 94, 0.8); /* Add box-shadow on hover */
+}
+
+/* Style the links inside the project boxes */
+.project.website-project a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Add hover effect to change link color */
+.project.website-project:hover a {
+    color: #fff;
+}
+.software-project .video-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #177c5e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000; /* Adjust the z-index to ensure it appears above other elements */
+}
+
+.software-project:hover .video-popup {
+    display: block;
+}
