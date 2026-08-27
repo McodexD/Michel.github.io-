@@ -3,134 +3,373 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Michel T | Computer Scientist & Digital Creator</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
-    <header>
-        <h1>Michel T</h1>
-        <p>Computer Scientist</p>
-    </header>
-    
-    <nav>
-        <!-- Add navigation links based on your projects -->
-        <a href="#web">Websites</a>
-        <a href="#software">Software</a>
-        <a href="#studio">Studio</a>
-        <a href="#games">Video Games</a>
-        <a href="#videos">Videos</a>
-        <a href="#animation">Animation</a>
+
+    <!-- Dynamic Background Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">MT<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#studio">Studio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 
-    <main>
-        <section id="about">
-            <h2 style="text-align: center;">About Me</h2>
-            <p style="text-align: center;">
-                Greetings, I am Michel T, a dedicated enthusiast with a profound passion for<br>
-                world-building, storytelling, and cutting-edge technology. Welcome to my project page,<br>
-                where creativity meets innovation.<br>
-                <h1 style="text-align: center;">My projects</h1>
-            </p>
-        </section>
-
-        <!-- Websites Section -->
-        <section id="web">
-            <h2>Websites</h2>
-            <div class="project website-project"> <!-- Corrected class attribute -->
-                <h3>Eleumania Academy</h3>
-                <p>An esport academy for csgo/dota2</p>
-                <a href="https://mcodexd.github.io/mcodexd.github.io-/" target="_blank"></a>
+    <!-- Hero Header -->
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="badge">Computer Scientist & World Builder</div>
+            <h1>Michel T</h1>
+            <p class="hero-subtitle">Engineering high-performance software, immersive video games, and interactive visual media.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> Explore Projects</a>
+                <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Get In Touch</a>
             </div>
-        
-            <div class="project website-project">
-                <h3>My Personal Portfolio</h3>
-                <p>A Portfolio so you can know more about me</p>
-                <a href="https://mcodexd.github.io/MichelT.github.io-/#projects" target="_blank"></a>
-            </div>
-            <!-- Add more website projects as needed -->
-        </section>
-
-        <!-- Software Section -->
-        <section id="studio">
-            <h2>Studio</h2>
-            <div class="project">
-                <h3>Xindex studios</h3>
-                <p>A studio to produce stroies, 3d projects, games, animations, music, art and more</p>
-                <a href="https://xindexstudios.com/" target="_blank">check us out</a>
-            </div>
-            <!-- Add content for the Studio section -->
-        </section>
-
-        
-        <section id="software">
-            <h2>Software</h2>
-            <div class="project software-project">
-                <h3>Software Project 1</h3>
-                <p>(Note) these are all shown in Swedish</p>
-                <!-- Add a placeholder element for the video popup -->
-                <div class="video-popup" data-video-id="MfmbqvdWRjQ"></div>
-                <a href="software_project1.html" target="_blank"></a>
-            </div>
-            <!-- Add more software projects as needed -->
-        </section>
-        <!-- Studio Section -->
-        <!-- Video Games Section -->
-        <section id="games">
-            <h2>Video Games</h2>
-            <div class="project software-project">
-                <h3>Video Game 1</h3>
-                <p>(Note) these are all shown in Swedish</p>
-                <!-- Add a placeholder element for the video popup -->
-                <div class="video-popup" data-video-id="Nw7v31gbgWg"></div>
-                <a href="#" target="_blank">Game Link</a>
-            </div>
-            <!-- Add more video game projects as needed -->
-        </section>
-
-        <!-- Videos Section -->
-        <section id="videos">
-            <h2>Check out my youtube channel of some video i edit (gameplay)</h2>
-            <div class="project">
-                <a href="https://www.youtube.com/@mcodexd4552" target="_blank">My Channle</a>
-
-            </div>
-            <!-- Add content for the Videos section -->
-        </section>
-
-    <!-- Contact Me Section -->
-    <section id="contact">
-        <h2 style="text-align: center;">Contact Me</h2>
-        <p class="contact-text">Contact me for collaboration or any inquiries. I'll get back to you as soon as possible.</p>
-        <div class="contact-form">
-            <!-- Your Formspree form -->
-            <form action="https://formspree.io/f/myyryzdp" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" name="_replyto" required>
-        
-                <label for="message">Message:</label>
-                <textarea name="message" required></textarea>
-        
-                <button type="submit">Send Message</button>
-            </form>
         </div>
-    </section>
-    <footer>
-        <p>&copy; 2023 Michel T. All Rights Reserved</p>
-    </footer>
+    </header>
 
-   
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <iframe id="modal-iframe" src="" frameborder="0" allowfullscreen></iframe>
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section reveal">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                </div>
+                <div class="about-text glass">
+                    <h3>Creativity Meets Cutting-Edge Technology</h3>
+                    <p>
+                        Greetings! I am Michel T, a dedicated Computer Scientist with a profound passion for 
+                        world-building, storytelling, software architecture, and interactive engine mechanics.
+                    </p>
+                    <p>
+                        Whether designing competitive eSports hubs, building custom gaming software, or managing multidisciplinary digital studios, I fuse computational theory with visual art.
+                    </p>
+                    <div class="quick-facts">
+                        <div class="fact-item"><i class="fas fa-code"></i><span>Software Architecture</span></div>
+                        <div class="fact-item"><i class="fas fa-gamepad"></i><span>Game Engineering</span></div>
+                        <div class="fact-item"><i class="fas fa-vr-cardboard"></i><span>3D & Media Pipelines</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical & Professional Skills Section -->
+<section id="skills" class="section reveal">
+    <div class="section-header">
+        <h2>Technical & Professional Proficiency</h2>
+        <div class="underline"></div>
+    </div>
+    
+    <div class="skills-grid">
+
+        <!-- Category 1: Programming Languages -->
+        <div class="skill-category glass">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+            
+            <div class="skill-bar">
+                <div class="skill-meta"><span>C#</span><span class="score">10/10 • Expert</span></div>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>HTML5</span><span class="score">10/10 • Expert</span></div>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>CSS3</span><span class="score">10/10 • Expert</span></div>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>SQL</span><span class="score">8/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Python</span><span class="score">8/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>C++</span><span class="score">7/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Node.js</span><span class="score">7/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>JavaScript</span><span class="score">5/10 • Intermediate</span></div>
+                <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+            </div>
+        </div>
+
+        <!-- Category 2: Engines, Tools & Systems -->
+        <div class="skill-category glass">
+            <h3><i class="fas fa-gamepad"></i> Engines & Operating Systems</h3>
+            
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Windows</span><span class="score">10/10 • Expert</span></div>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Unity Engine</span><span class="score">7/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Blender (3D Modeling)</span><span class="score">7/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Linux</span><span class="score">7/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>macOS</span><span class="score">7/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Unreal Engine</span><span class="score">6/10 • Competent</span></div>
+                <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Algorithms & Data Structures</span><span class="score">8/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            </div>
+        </div>
+
+        <!-- Category 3: Content Creation & Production -->
+        <div class="skill-category glass">
+            <h3><i class="fas fa-video"></i> Media Production & Writing</h3>
+            
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Script Writing / Lore</span><span class="score">10/10 • Master</span></div>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Video Editing</span><span class="score">10/10 • Master</span></div>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Shorts Content</span><span class="score">10/10 • Master</span></div>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Long-Form Content</span><span class="score">7/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Photography</span><span class="score">2/10 • Basic</span></div>
+                <div class="bar"><div class="fill" style="width: 20%;"></div></div>
+            </div>
+        </div>
+
+        <!-- Category 4: Human & Communication Skills -->
+        <div class="skill-category glass">
+            <h3><i class="fas fa-users"></i> Leadership & Communication</h3>
+            
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Public Speaking & Oral Skills</span><span class="score">10/10 • Master</span></div>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Community Building</span><span class="score">9/10 • Specialist</span></div>
+                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>Recruitment & Team Building</span><span class="score">9/10 • Specialist</span></div>
+                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-meta"><span>eSports & Gaming Org Ops</span><span class="score">8/10 • Advanced</span></div>
+                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Projects Grid Section -->
+        <section id="projects" class="section reveal">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Websites</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="games">Games</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Web Project 1 -->
+                <div class="project-card glass" data-category="web">
+                    <div class="project-thumb">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web Development</span>
+                        <h3>Eleumania Academy</h3>
+                        <p>An eSports training platform tailored for competitive CS:GO & Dota 2 players.</p>
+                        <div class="project-links">
+                            <a href="https://mcodexd.github.io/mcodexd.github.io-/" target="_blank" class="btn-icon"><i class="fas fa-external-link-alt"></i> Live Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Project 2 -->
+                <div class="project-card glass" data-category="web">
+                    <div class="project-thumb">
+                        <i class="fas fa-user-ninja"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web Development</span>
+                        <h3>Legacy Portfolio</h3>
+                        <p>Initial portfolio design iteration showcasing personal projects and media.</p>
+                        <div class="project-links">
+                            <a href="https://mcodexd.github.io/MichelT.github.io-/#projects" target="_blank" class="btn-icon"><i class="fas fa-external-link-alt"></i> Live Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Project 1 -->
+                <div class="project-card glass" data-category="software">
+                    <div class="project-thumb">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Software / C#</span>
+                        <h3>Software Application 1</h3>
+                        <p>Custom application development project (Interface in Swedish).</p>
+                        <div class="project-links">
+                            <button class="btn-icon open-video" data-video-id="MfmbqvdWRjQ"><i class="fas fa-play"></i> Demo Video</button>
+                            <a href="software_project1.html" target="_blank" class="btn-icon"><i class="fas fa-file-code"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Project 2 (NEW: Database Project) -->
+                <!-- Software Project 2 (Database System) -->
+<div class="project-card glass" data-category="software">
+    <div class="project-thumb">
+        <i class="fas fa-database"></i>
+    </div>
+    <div class="project-info">
+        <span class="project-tag">Database System</span>
+        <h3>University Applied Sciences DB</h3>
+        <p>Database design and management implementation built for institutional application requirements.</p>
+        <div class="project-links">
+            <button class="btn-icon open-video" data-video-id="MEn995NNSSM"><i class="fas fa-play"></i> View Overview</button>
+            <a href="https://github.com/McodexD/Database-Design-YrkesCo" target="_blank" class="btn-icon"><i class="fab fa-github"></i> Details</a>
         </div>
     </div>
-   
-   
+</div>
+
+                <!-- Game Project 1 -->
+                <div class="project-card glass" data-category="games">
+                    <div class="project-thumb">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Video Game</span>
+                        <h3>Video Game Project 1</h3>
+                        <p>Interactive gameplay experience developed with real-time mechanics (Swedish interface).</p>
+                        <div class="project-links">
+                            <button class="btn-icon open-video" data-video-id="Nw7v31gbgWg"><i class="fas fa-play"></i> Watch Trailer</button>
+                            <a href="#" class="btn-icon"><i class="fas fa-download"></i> Play Game</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studio & Media Section -->
+        <section id="studio" class="section reveal">
+            <div class="section-header">
+                <h2>Xindex Studios & Content</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="studio-container glass">
+                <div class="studio-badge"><i class="fas fa-clapperboard"></i> Creative Engine</div>
+                <h3>Xindex Studios</h3>
+                <p>A multi-disciplinary studio pipeline creating original stories, 3D visual environments, video games, character animations, digital music, and art assets.<b>"(STUDIO Currently Down due to technical issues.)"</b></p>
+                <div class="studio-actions">
+                    <a href="https://xindexstudios.com/" target="_blank" class="btn btn-primary"><i class="fas fa-globe"></i> Visit XindexStudios.com</a>
+                    <a href="https://www.youtube.com/@mcodexd4552" target="_blank" class="btn btn-secondary"><i class="fab fa-youtube"></i> YouTube Channel</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section reveal">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-wrapper glass">
+                <div class="contact-meta">
+                    <h3>Let's Collaborate</h3>
+                    <p>Have a project idea, business inquiry, or gaming proposition? Send a message and let's get started.</p>
+                    <div class="contact-info-list">
+                        <div class="info-item"><i class="fas fa-envelope"></i><span>Contact via Formspree API</span></div>
+                        <div class="info-item"><i class="fas fa-location-dot"></i><span>Remote / Global Collaboration</span></div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/myyryzdp" method="POST">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="_replyto" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Michel T. All Rights Reserved. Built with performance & passion.</p>
+    </footer>
+
+    <!-- Video Modal Container -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content glass">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="iframe-container" id="iframeWrapper">
+                <!-- Dynamically constructed iframe goes here -->
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
